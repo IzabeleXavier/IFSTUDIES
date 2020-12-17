@@ -15,6 +15,7 @@ export class ExerciciosComponent implements OnInit {
   questoes: Questao[];
   escolha: string;
   acertou: boolean = undefined;
+  mostrarQuestoesDisciplina: boolean = true;
  
   constructor( private route: ActivatedRoute, private ex: ExercicioService) {
     this.escolha = '';
