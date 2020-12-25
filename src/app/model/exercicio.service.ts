@@ -21,7 +21,7 @@ export class ExerciciosComponent implements OnInit {
     this.acertou = true;
     
     
-  }
+  } 
 
   ngOnInit() {
     
