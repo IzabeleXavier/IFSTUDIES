@@ -1,6 +1,8 @@
+ 
 
-
-<div class="row animate__animated animate__fadeInUp">
+<div *ngIf="this.lista">
+  
+  <div class="row animate__animated animate__fadeInUp">
 
   <div class="col">
     <div (click)="obterArquivo('assets/html/matematica/ConjuntosNumericos.html')">
@@ -31,78 +33,7 @@
 
 
   <div class="col">
-    <div (click)="obterArquivo('assets/html/matematica/NumerosNaturais.html')">
-      
-        <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Números Naturais</p>
-            <img [src]="Icone">
-          </div>
-       </div>
-
-    </div>
-  </div>
-  
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/matematica/NumerosInteiros.html')">
-      
-        <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Números Inteiros</p>
-            <img [src]="Icone">
-          </div>
-       </div>
-
-    </div>
-  </div>
-
-</div>
-
-
-<div class="row animate__animated animate__fadeInUp">
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/matematica/NumerosRacionais.html')">
-
-      <div class="card border-dark card-disciplina" >
-        <div class="card-body">
-          <p class="card-title">Números Racionais</p>
-          <img [src]="Icone">
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/matematica/NumerosIrracionais.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Números Irracionais</p>
-            <img [src]="Icone">
-          </div>
-       </div>
-
-    </div>
-  </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/matematica/NumerosReais.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Números Reais</p>
-            <img [src]="Icone">
-          </div>
-       </div>
-
-    </div>   
-  </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/matematica/NumerosBinario.html')">
+    <div (click)="obterArquivo('assets/html/matematica/NumerosBinarios.html')">
 
       <div class="card border-dark card-disciplina" >
           <div class="card-body">
@@ -377,8 +308,10 @@
   </div>
 </div>
 
+</div>
 
-<div [innerHTML]="paginaCarregada"></div>
+
+<div *ngIf="!this.lista" [innerHTML]="paginaCarregada"></div>
 
 
 
