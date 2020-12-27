@@ -15,7 +15,6 @@ export class ExerciciosComponent implements OnInit {
   questoes: Questao[];
   escolha: string;
   acertou: boolean = undefined;
-  mostrarQuestoesDisciplina: boolean = true;
  
   constructor( private route: ActivatedRoute, private ex: ExercicioService) {
     this.escolha = '';
@@ -27,9 +26,14 @@ export class ExerciciosComponent implements OnInit {
   ngOnInit() {
     
 
+
   }
-  
-  Questao(cod_disc: number, cod_assunto:number){
+
+  mostrarQuestoesDisciplina: boolean = true;
+
+
+ 
+  QuestoesPortugues1(cod_disc: number, cod_assunto: number){
     
     /*const cod_disc: number = +this.route.snapshot.paramMap.get('cod_disc');
     const cod_assunto: number = +this.route.snapshot.paramMap.get('cod_assunto'); */
