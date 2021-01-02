@@ -1,4 +1,4 @@
-<br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 <h1 class="text-center">
 	Matemática
@@ -6,17 +6,50 @@
 
 <div *ngIf="this.mostrarQuestoesDisciplina">
 	<ul>
-		<li (click)="QuestoesMatematica1">
-			<a  [routerLink]="['/exercicios/exerciciosmat']" [queryParams]="{cod_disciplina:2,cod_assunto:1}">InterpretacaoTextual</a>
+		<li (click)="QuestoesMatematica(2,1)">
+			Interpretacao Textual
 		</li>
 
-		
+		<li (click)="QuestoesMatematica(2,2)">
+			Introducao a Linguistica
+		</li>
+
+		<li (click)="QuestoesMatematica(2,3)">
+			Tipos de Discursos
+		</li>
+
+		<li (click)="QuestoesMatematica(2,4)">
+			Fatores de Textualidade
+		</li>
+
+		<li (click)="QuestoesMatematica(2,5)">
+			Linguagem
+		</li>
+
+		<li (click)="QuestoesMatematica(2,6)">
+			Variedades Linguisticas
+		</li>
+
+		<li (click)="QuestoesMatematica(2,7)">
+			Elementos da Comunicacao
+		</li>
+
+		<li (click)="QuestoesMatematica(2,8)">
+			Campos Semanticos
+		</li>
+
+		<li (click)="QuestoesMatematica(2,9)">
+			Relacoes de Sentidos Entre os Vocabulos do Texto
+
+		</li>
+
+	
 	</ul>
 </div>
  
 
 <div *ngIf="!this.mostrarQuestoesDisciplina">
-	<a (click)="RetornarListaDisciplina()">Voltar Para Lista de Materias</a>
+	<a (click)="RetornarListaDisciplina()">Voltar Para Lista de Assuntos</a>
 	
 	<div class="container" *ngFor="let q of questoes; let i = index">
 
