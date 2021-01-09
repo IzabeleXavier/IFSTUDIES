@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-exercicios',
+  selector: 'app-exerciciosmat',
   templateUrl: './exerciciosmat.component.html',
   styleUrls: ['./exerciciosmat.component.css']
 })
