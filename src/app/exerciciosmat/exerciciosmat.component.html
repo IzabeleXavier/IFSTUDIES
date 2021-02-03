@@ -1,22 +1,108 @@
-<br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 <h1 class="text-center">
 	Matemática
 </h1> 
 
 <div *ngIf="this.mostrarQuestoesDisciplina">
-	<ul>
-		<li (click)="QuestoesMatematica1">
-			<a  [routerLink]="['/exercicios/exerciciosmat']" [queryParams]="{cod_disciplina:2,cod_assunto:1}">InterpretacaoTextual</a>
+	<ul class="list-group ">
+		<li class="list-group-item" (click)="QuestoesMatematica(2,61)">
+			Conjuntos numéricos
+		</li>
+		
+
+		<li class="list-group-item" (click)="QuestoesPortugues(2,62)">
+			Números primos 
 		</li>
 
-		
+		<li  class="list-group-item" (click)="QuestoesPortugues(2,63)">
+			Números binários
+		</li>
+
+		<li class="list-group-item"  (click)="QuestoesPortugues(2,64)">
+			Operações com números 
+		</li>
+
+		<li class="list-group-item" (click)="QuestoesPortugues(2,65)">
+			Regras de divisibilidade 
+		</li>
+
+		<li class="list-group-item" (click)="QuestoesPortugues(2,66)">
+			Múltiplos e divisores 
+		</li>
+
+		<li class="list-group-item" (click)="QuestoesPortugues(2,67)">
+			MMC e MDC    
+		</li>
+
+		<li class="list-group-item" (click)="QuestoesPortugues(2,68)">
+			Expressões numéricas
+		</li>
+
+		<li class="list-group-item" (click)="QuestoesPortugues(2,69)">
+			Frações
+
+		</li>
+
+		<li class="list-group-item" (click)="QuestoesPortugues(2,70)">
+			Algarismos Romanos
+		</li>
+
+		<li class="list-group-item" (click)="QuestoesPortugues(2,71)">
+			Unidade de medidas
+		</li>
+
+		<li class="list-group-item" (click)="QuestoesPortugues(2,72)">
+			Razão e Proporção  
+		</li>
+
+		<li class="list-group-item"(click)="QuestoesPortugues(2,73)">
+			Escalas Numéricas
+		</li>
+
+		<li class="list-group-item" (click)="QuestoesPortugues(2,74)">
+			Grandezas diretamente proporcionais
+		</li>
+
+		<li class="list-group-item"(click)="QuestoesPortugues(2,75)">
+			Grandezas inversamente proporcionais
+		</li>
+
+		<li class="list-group-item"(click)="QuestoesPortugues(2,76)">
+			Regra de três simples 
+		</li>
+
+		<li class="list-group-item"(click)="QuestoesPortugues(2,77)">
+			Regra de três composta 
+		</li>
+
+		<li class="list-group-item"(click)="QuestoesPortugues(2,78)">
+			Porcentagem
+		</li>
+
+		<li class="list-group-item"(click)="QuestoesPortugues(2,79)">
+			Juros simples
+		</li>
+
+		<li class="list-group-item"(click)="QuestoesPortugues(2,80)">
+			Juros Compostos 
+		</li>
+
+
+		<li class="list-group-item"(click)="QuestoesPortugues(2,81)">
+			Equação do 1° grau 
+		</li>
+
+		<li class="list-group-item"(click)="QuestoesPortugues(2,82)">
+			Equação do 2° grau
+		</li>
+
 	</ul>
 </div>
  
 
 <div *ngIf="!this.mostrarQuestoesDisciplina">
-	<a (click)="RetornarListaDisciplina()">Voltar Para Lista de Materias</a>
+	<a (click)="RetornarListaDisciplina()">Voltar Para Lista de Assuntos</a>
 	
 	<div class="container" *ngFor="let q of questoes; let i = index">
 

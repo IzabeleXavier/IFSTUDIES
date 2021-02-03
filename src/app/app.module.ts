@@ -18,6 +18,7 @@ import { DesenvolvedoresComponent } from './desenvolvedores/desenvolvedores.comp
 import { ProcseletivoComponent } from './procseletivo/procseletivo.component';
 import { FooterComponent } from './footer/footer.component';
 import { ExerciciosmatComponent } from './exerciciosmat/exerciciosmat.component';
+import { ExerciciosredComponent } from './exerciciosred/exerciciosred.component';
 
 
 
@@ -36,7 +37,8 @@ import { ExerciciosmatComponent } from './exerciciosmat/exerciciosmat.component'
     DesenvolvedoresComponent,
     ProcseletivoComponent,
     FooterComponent,
-    ExerciciosmatComponent
+    ExerciciosmatComponent,
+    ExerciciosredComponent
   ],
   imports: [
     BrowserModule,

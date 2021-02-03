@@ -33,7 +33,7 @@ export class ExerciciosComponent implements OnInit {
 
 
  
-  QuestoesPortugues1(cod_disc: number, cod_assunto: number){
+  QuestoesPortugues(cod_disc: number, cod_assunto: number){
     
     /*const cod_disc: number = +this.route.snapshot.paramMap.get('cod_disc');
     const cod_assunto: number = +this.route.snapshot.paramMap.get('cod_assunto'); */

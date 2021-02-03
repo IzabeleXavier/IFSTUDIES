@@ -30,7 +30,11 @@ input[type="radio"] {
   li{
       border-width: 1px;
       border-color: black;
+      font-family: "Poppins", sans-serif;
   }
+  li:hover {
+    background-color: #5fcf80; 
+ }
   .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
       color: #5fcf80;
     }

@@ -14,6 +14,7 @@ import { ExerciciosmatComponent } from './exerciciosmat/exerciciosmat.component'
 
 
 
+
 const routes: Routes = [
 
 	{ path: '', component: HomeComponent },
